@@ -1,12 +1,16 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-*, *:before, *:after {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap");
+*,
+*:before,
+*:after {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
   border: 0;
+  text-decoration: none;
   --font-color-black: #303133;
   --font-color-white: #FFFFFF;
   --font-color-lilas: #6442FF;
@@ -29,8 +33,16 @@ h2 {
   padding-bottom: 1.75rem;
 }
 
+h3 {
+  padding-bottom: 1.75rem;
+}
+
 p {
   font-size: 1.125rem;
+}
+
+a {
+  color: inherit;
 }
 
 .material-icons {
@@ -63,19 +75,36 @@ img {
 }
 
 /* Estrutura */
-#box-color-black {
-  margin: 0;
-  padding-bottom: 0;
-  background-color: var(--font-color-black);
-}
-
 .content {
   margin-left: 2.375rem;
   margin-right: 2.375rem;
 }
 
 .box-section {
+  padding-top: 4.5rem;
   padding-bottom: 4.5rem;
+}
+
+.box-color-black {
+  margin-left: -2.375rem;
+  margin-right: -2.375rem;
+  padding-left: 2.375rem;
+  padding-right: 2.375rem;
+  color: white;
+  background-color: var(--font-color-black);
+}
+
+.box-color-footer {
+  background-color: #141618;
+}
+
+.box-color-gradient {
+  margin-left: -2.375rem;
+  margin-right: -2.375rem;
+  padding-left: 2.375rem;
+  padding-right: 2.375rem;
+  color: white;
+  background: linear-gradient(90.2deg, #7C00FC 0.16%, #4900E9 99.02%);
 }
 
 /* HOME */
@@ -86,10 +115,26 @@ img {
 }
 
 /* SERVIÇOS */
+.box-content-servicos-1 {
+  display: -ms-grid;
+  display: grid;
+}
+
 .box-servicos-1 {
   padding: 2.625rem 2rem 2.625rem 2rem;
   color: white;
+}
+
+.box-servicos-1:nth-child(1) {
   background-color: #6A00F6;
+}
+
+.box-servicos-1:nth-child(2) {
+  background-color: #5403D1;
+}
+
+.box-servicos-1:nth-child(3) {
+  background-color: #4006AD;
 }
 
 .servicos-1 .material-icons {
@@ -107,12 +152,147 @@ img {
   background-color: F7F7F7;
 }
 
+.box-servicos-2:nth-child(1) {
+  margin-left: -2.375rem;
+  margin-right: -2.375rem;
+  padding-left: 2.375rem;
+  padding-right: 2.375rem;
+  background-color: #F7F7F7;
+}
+
+.box-servicos-2:nth-child(3) {
+  margin-left: -2.375rem;
+  margin-right: -2.375rem;
+  padding-left: 2.375rem;
+  padding-right: 2.375rem;
+  background-color: #F7F7F7;
+}
+
 .box-servicos-2 img {
   padding-bottom: 2.25rem;
 }
 
 /* PORTFOLIO */
-.global-partners-portfolio {
-  background-color: var(--font-color-black);
+#portfolio {
+  text-align: center;
+}
+
+.img-partners {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.img-partners img {
+  width: 50%;
+  padding-top: 2rem;
+}
+
+.img-description-portfolio {
+  padding-top: 2.625rem;
+  padding-bottom: 2.25rem;
+}
+
+.p-title-portfolio {
+  padding-bottom: 3.25rem;
+}
+
+.p-description-portfolio {
+  font-weight: 500;
+}
+
+/* SOBRE */
+#sobre h2 {
+  text-align: center;
+}
+
+.grid-equipe {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 3rem;
+}
+
+.p-description-sobre {
+  font-weight: 300;
+}
+
+.img-equipe {
+  padding-bottom: 2.25rem;
+}
+
+.p-name-equipe {
+  font-weight: 500;
+}
+
+.p-description-equipe {
+  padding-top: 1rem;
+  font-weight: 300;
+}
+
+/* CONTATO */
+#contato {
+  text-align: center;
+}
+
+#contato h2 {
+  font-weight: 500;
+}
+
+.buttom-contato {
+  background-color: #FFFFFF;
+  color: var(--font-color-black);
+  font-weight: 500;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid #FFFFFF;
+}
+
+.buttom-contato:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--font-color-white);
+}
+
+.p-subtitle-contato {
+  font-weight: 600;
+}
+
+/* footer */
+.footer {
+  font-family: 'Jost', sans-serif;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+#linha {
+  border-top: 1px solid #303133;
+  border-bottom: 1px solid #303133;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+#linha .p-subtitle-footer {
+  padding-bottom: 1rem;
+  color: #777777;
+  font-weight: 500;
+}
+
+#linha .p-subtitle-email-footer {
+  font-size: 0.75rem;
+  padding-bottom: 1.125rem;
+  color: #777777;
+  font-weight: 500;
+}
+
+#linha a {
+  color: #6442FF;
+}
+
+.p-copyright-footer {
+  padding-bottom: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
