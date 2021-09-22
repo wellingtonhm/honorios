@@ -464,4 +464,8 @@ nav .menu-x.show {
   -webkit-clip-path: circle();
           clip-path: circle();
 }
+
+#whatsapp-size {
+  font-size: 3rem;
+}
 /*# sourceMappingURL=main.css.map */
