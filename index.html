@@ -5,6 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Facebook OG -->
+    <meta  property = "og: type" content = "website"> 
+    <meta  property = "og: url" content = "https://honorios.com.br"> 
+    <meta  property = "og: title" content = "Honorios - Criação de sites"> 
+    <meta  property = "og: imagem" content = "https://"> 
+    <meta  property = "og: description" content = "Description Here"> 
+    <meta  property = "og: site_name" content = "Honorios"> 
+    <meta  property = "og: locale" content = "pt_BR "> 
+    <!-- Próximas tags são opcionais mas recomendado --> 
+    <meta  property = "og: image: width" content = "1200"> 
+    <meta  property = "og: imagem: altura" content = "630">
+
     <title>Honorios - Criação de sites</title>
     <link rel="stylesheet" href="./style/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,17 +31,18 @@
             </div>
             <div class="menu-mobile">
                 <ul class="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#_home">Home</a></li>
+                    <li><a href="#_servicos">Serviços</a></li>
+                    <li><a href="#_portfolio">Portfolio</a></li>
+                    <li><a href="#_sobre">Sobre</a></li>
+                    <li><a href="#_contato">Contato</a></li>
                 </ul>
             </div>
             <span class="toggle material-icons menu-hamburger">menu</span>
             <span class="toggle material-icons menu-x">close</span>
         </nav>
     </header>
+    <span id="_home"></span>
     <div class="content">
         <main>
             <section id="home">
@@ -39,6 +53,7 @@
                         value.
                         Leverage agile frameworks to provide a robust high level overviews.</p>
                 </div>
+                <span id="_servicos"></span>
             </section>
             <section id="servicos">
                 <div class="servicos-1">
@@ -101,6 +116,7 @@
                         </div>
                     </div>
                 </div>
+                <span id="_portfolio"></span>
             </section>
             <section id="portfolio">
                 <div class="box-section box-color-black">
@@ -138,6 +154,7 @@
                         </div>
                     </div>
                 </div>
+                <span id="_sobre"></span>
             </section>
             <section id="sobre">
                 <div class="box-section box-color-black">
@@ -181,12 +198,14 @@
                         <p class="p-description-equipe">Creative Director and Designe</p>
                     </div>
                 </div>
+                <span id="_contato"></span>
             </section>
             <section id="contato">
                 <div class="box-section box-color-gradient">
                     <p class="p-subtitle-contato">START A PROJECT</p>
                     <h2>Ready to rock together?!</h2>
-                    <a href="#">
+                    <a href="https://api.whatsapp.com/send?phone=5511977197738&text=Gostaria%20de%20solicitar%20um%20servi%C3%A7o%20de%20Cria%C3%A7%C3%A3o%20de%20Sites."
+                        target="_blank" rel="noopener">
                         <div class="buttom-contato">
                             <p>Contato</p>
                         </div>
@@ -200,9 +219,15 @@
                 <div id="linha">
                     <p class="p-subtitle-footer">LET'S MAKE SOMETHING GREAT</p>
                     <h2>We create cool works</h2>
-
+                    <div class="menu-footer">
+                        <p><a href="#_home">Home</a></p>
+                        <p><a href="#_servicos">Serviços</a></p>
+                        <p><a href="#_portfolio">Portfolio</a></p>
+                        <p><a href="#_sobre">Sobre</a></p>
+                        <p><a href="#_contato">Contato</a></p>
+                    </div>
                     <p class="p-subtitle-email-footer">CONVERSE CONOSCO</p>
-                    <p><a href="mailto:honorios.gerencia@gmail.com">honorios.gerencia@gmail.com</a> </p>
+                    <p class="email-footer"><a href="mailto:honorios.gerencia@gmail.com">honorios.gerencia@gmail.com</a> </p>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -214,6 +239,16 @@
         </footer>
 
     </div>
+    <a href="#home" class="back-to-top">
+        <span class="material-icons">
+            arrow_upward</span>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=5511977197738&text=Gostaria%20de%20solicitar%20um%20servi%C3%A7o%20de%20Cria%C3%A7%C3%A3o%20de%20Sites."
+        target="_blank" rel="noopener" class="whatsapp">
+        <span class="material-icons">
+            whatsapp
+        </span>
+    </a>
 
 </body>
 <script src="./js/main.js"></script>

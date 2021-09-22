@@ -22,7 +22,7 @@ for (const link of links) {
 
 /* Mudar header da pagina quando der socroll*/
 const header = document.querySelector('#header')
-const navHeight = header.offsetHeight
+var navHeight = header.offsetHeight - 20;
 
 function changeHeaderWhenScroll() {
   if (window.scrollY >= navHeight) {
@@ -34,7 +34,19 @@ function changeHeaderWhenScroll() {
   }
 }
 
+/* Botão voltar para o topo */
+const backToTopButton = document.querySelector('.back-to-top')
+
+function backToTop() {
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
 /* When Scroll */
 window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
+  backToTop()
 })
