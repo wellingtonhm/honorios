@@ -76,6 +76,7 @@ img {
 
 /* Estrutura */
 .content {
+  padding-top: 4rem;
   margin-left: 2.375rem;
   margin-right: 2.375rem;
 }
@@ -105,6 +106,102 @@ img {
   padding-right: 2.375rem;
   color: white;
   background: linear-gradient(90.2deg, #7C00FC 0.16%, #4900E9 99.02%);
+}
+
+/* MENU */
+.title-menu {
+  font-family: 'Jost', sans-serif;
+  font-size: 2.1875rem;
+  font-weight: 500;
+}
+
+.ponto-title {
+  color: #6A00F6;
+}
+
+#header {
+  position: fixed;
+  z-index: 100;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+#header.scroll {
+  border-bottom: 1px solid #eaeaea;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.625rem 2.375rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+.menu-hamburger:hover {
+  cursor: pointer;
+}
+
+nav .menu-x {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 2.375rem;
+}
+
+nav .menu-x.show {
+  opacity: 1;
+  visibility: visible;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.menu-mobile.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-mobile {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-family: 'Jost', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1B1D1F;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  place-content: center;
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #FFFFFF;
 }
 
 /* HOME */
