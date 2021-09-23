@@ -72,7 +72,6 @@ a {
 
 img {
   width: 100%;
-  height: 100%;
 }
 
 /* Estrutura */
@@ -311,6 +310,11 @@ nav .menu-x.show {
   padding-top: 2rem;
 }
 
+.grid-portfolio {
+  display: -ms-grid;
+  display: grid;
+}
+
 .img-description-portfolio {
   padding-top: 2.625rem;
   padding-bottom: 2.25rem;
@@ -327,6 +331,11 @@ nav .menu-x.show {
 /* SOBRE */
 #sobre h2 {
   text-align: center;
+}
+
+.box-description-sobre {
+  display: -ms-grid;
+  display: grid;
 }
 
 .grid-equipe {
@@ -409,6 +418,11 @@ nav .menu-x.show {
   font-weight: 500;
 }
 
+.grid-footer {
+  display: -ms-grid;
+  display: grid;
+}
+
 .menu-footer p {
   padding-bottom: 1.125rem;
 }
@@ -427,6 +441,12 @@ nav .menu-x.show {
 
 .p-copyright-footer a:hover {
   color: #6442FF;
+}
+
+.grid-copyright-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* back-to-top e Whats */
@@ -455,6 +475,8 @@ nav .menu-x.show {
 }
 
 .whatsapp {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   background: #26CC64;
   color: var(--font-color-white);
   position: fixed;
@@ -465,7 +487,129 @@ nav .menu-x.show {
           clip-path: circle();
 }
 
+.whatsapp:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
 #whatsapp-size {
   font-size: 3rem;
+}
+
+/* MOBILE */
+@media (min-width: 980px) {
+  /* STRUCTURE */
+  .content {
+    max-width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  /* NAV */
+  #header.scroll-desktop nav {
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    padding: 1rem 2.375rem;
+  }
+  #header.scroll-desktop .title-menu {
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    font-size: 2rem;
+  }
+  nav .menu-mobile {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+  nav .menu-hamburger {
+    display: none;
+  }
+  .menu-mobile {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--font-color-black);
+  }
+  .menu a:hover {
+    color: #999A9B;
+  }
+  /* SERVIÇOS */
+  .box-content-servicos-1 {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .box-servicos-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 2.625rem;
+            column-gap: 2.625rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .box-servicos-2:nth-child(1) {
+    background-color: #FFFFFF;
+  }
+  .box-servicos-2:nth-child(3) {
+    background-color: #FFFFFF;
+  }
+  .box-servicos-2 img {
+    padding-bottom: 0;
+  }
+  /* PORTFOLIO */
+  .grid-portfolio {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 9rem;
+            column-gap: 9rem;
+  }
+  /* SOBRE */
+  .box-description-sobre {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
+  .grid-equipe {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 9rem;
+            column-gap: 9rem;
+  }
+  /* FOOTER */
+  .grid-footer {
+    -ms-grid-columns: 2fr 1fr max-content min-content;
+        grid-template-columns: 2fr 1fr -webkit-max-content -webkit-min-content;
+        grid-template-columns: 2fr 1fr max-content min-content;
+    -webkit-column-gap: 6rem;
+            column-gap: 6rem;
+  }
+  .grid-copyright-footer {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -22,7 +22,8 @@ for (const link of links) {
 
 /* Mudar header da pagina quando der socroll*/
 const header = document.querySelector('#header')
-var navHeight = header.offsetHeight - 20;
+const navHeight = header.offsetHeight - 20;
+const navHeightDesktop = header.offsetHeight;
 
 function changeHeaderWhenScroll() {
   if (window.scrollY >= navHeight) {
@@ -30,6 +31,13 @@ function changeHeaderWhenScroll() {
     header.classList.add('scroll')
   } else {
     header.classList.remove('scroll')
+    //menor que a aultura do header
+  };
+  if (window.scrollY >= navHeightDesktop) {
+    // scroll maior que a altura do header
+    header.classList.add('scroll-desktop')
+  } else {
+    header.classList.remove('scroll-desktop')
     //menor que a aultura do header
   }
 }
