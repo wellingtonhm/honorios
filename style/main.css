@@ -40,6 +40,11 @@ h3 {
 
 p {
   font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.p-cinza {
+  color: #777777;
 }
 
 a {
@@ -72,6 +77,7 @@ a {
 
 img {
   width: 100%;
+  border-radius: 0.25rem;
 }
 
 /* Estrutura */
@@ -112,6 +118,20 @@ body {
   padding-right: 2.375rem;
   color: white;
   background-color: var(--font-color-black);
+}
+
+.box-color-home {
+  padding-top: 10rem !important;
+  padding-bottom: 5rem !important;
+  margin-left: -2.375rem;
+  margin-right: -2.375rem;
+  padding-left: 2.375rem;
+  padding-right: 2.375rem;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-image: url(https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2021/03/xps-dpbXgTh0Lac-unsplash.webp);
 }
 
 #box-color-footer {
@@ -271,26 +291,28 @@ nav .menu-x.show {
 .box-servicos-2 {
   color: --font-color-black;
   background-color: F7F7F7;
-}
-
-.box-servicos-2:nth-child(1) {
   margin-left: -2.375rem;
   margin-right: -2.375rem;
   padding-left: 2.375rem;
   padding-right: 2.375rem;
+}
+
+.box-servicos-2:nth-child(1) {
   background-color: #F7F7F7;
 }
 
 .box-servicos-2:nth-child(3) {
-  margin-left: -2.375rem;
-  margin-right: -2.375rem;
-  padding-left: 2.375rem;
-  padding-right: 2.375rem;
   background-color: #F7F7F7;
 }
 
 .box-servicos-2 img {
   padding-bottom: 2.25rem;
+}
+
+.p-title-servicos-2 {
+  font-size: 2.1875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 /* PORTFOLIO */
@@ -317,8 +339,9 @@ nav .menu-x.show {
 }
 
 .img-description-portfolio {
-  padding-top: 2.625rem;
-  padding-bottom: 2.25rem;
+  border-radius: 0.25rem;
+  margin-top: 2.625rem;
+  margin-bottom: 2.25rem;
 }
 
 .p-title-portfolio {
@@ -497,12 +520,18 @@ nav .menu-x.show {
   font-size: 3rem;
 }
 
-/* MOBILE */
+/* ---- MOBILE ---- */
 @media (min-width: 980px) {
+  h1 {
+    font-size: 9.375rem;
+  }
+  h2 {
+    font-size: 3.125rem;
+  }
   /* STRUCTURE */
   .box-section {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
   }
   /* NAV */
   #header.scroll-desktop nav {
@@ -549,10 +578,23 @@ nav .menu-x.show {
   .menu a:hover {
     color: #999A9B;
   }
+  /* HOME */
+  .p-negocios-description {
+    padding-left: 50%;
+  }
   /* SERVIÇOS */
   .box-content-servicos-1 {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  .box-servicos-1 {
+    padding: 4.75rem 3.25rem;
+  }
+  .p-title-servicos-1 {
+    font-size: 1.75rem;
+  }
+  .p-title-servicos-2 {
+    margin-bottom: 2rem;
   }
   .grid-services-2 {
     display: -ms-grid;
@@ -570,6 +612,10 @@ nav .menu-x.show {
     margin-right: calc(50% - 50vw);
     background-color: #F7F7F7;
   }
+  .box-servicos-2:nth-child(2) {
+    padding-left: 0rem;
+    padding-right: 2.375rem;
+  }
   .box-servicos-2:nth-child(3) {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
@@ -584,6 +630,7 @@ nav .menu-x.show {
         grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 9rem;
             column-gap: 9rem;
+    row-gap: 3.125rem;
   }
   /* SOBRE */
   .box-description-sobre {
@@ -634,6 +681,10 @@ nav .menu-x.show {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
   }
+  .box-color-home {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
   .full-width {
     max-width: 1128px;
     margin: auto;
@@ -644,6 +695,18 @@ nav .menu-x.show {
     margin: auto;
     padding-left: 2.375rem;
     padding-right: 2.375rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  /* STRUCTURE */
+  .box-section {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+  /* SERVIÇOS */
+  .p-title-servicos-1 {
+    font-size: 2.25rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
