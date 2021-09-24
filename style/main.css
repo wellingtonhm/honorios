@@ -305,13 +305,10 @@ nav .menu-x.show {
   background-color: #F7F7F7;
 }
 
-.box-servicos-2 img {
-  padding-bottom: 2.25rem;
-}
-
 .p-title-servicos-2 {
   font-size: 2.1875rem;
   font-weight: 500;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -594,6 +591,7 @@ nav .menu-x.show {
     font-size: 1.75rem;
   }
   .p-title-servicos-2 {
+    margin-top: 0;
     margin-bottom: 2rem;
   }
   .grid-services-2 {
@@ -620,9 +618,6 @@ nav .menu-x.show {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     background-color: #F7F7F7;
-  }
-  .box-servicos-2 img {
-    padding-bottom: 0;
   }
   /* PORTFOLIO */
   .grid-portfolio {

@@ -312,14 +312,12 @@ nav .menu-x.show {
 
     ;
 
-    img {
-        padding-bottom: 2.25rem;
-    }
 }
 
 .p-title-servicos-2 {
     font-size: 2.1875rem;
     font-weight: 500;
+    margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -621,6 +619,7 @@ nav .menu-x.show {
     }
 
     .p-title-servicos-2 {
+        margin-top: 0;
         margin-bottom: 2rem;
     }
 
@@ -652,10 +651,6 @@ nav .menu-x.show {
         }
 
         ;
-
-        img {
-            padding-bottom: 0;
-        }
     }
 
     /* PORTFOLIO */
