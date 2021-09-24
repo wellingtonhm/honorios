@@ -114,8 +114,9 @@ body {
   background-color: var(--font-color-black);
 }
 
-.box-color-footer {
+#box-color-footer {
   background-color: #141618;
+  padding-bottom: 1rem;
 }
 
 .box-color-gradient {
@@ -499,14 +500,9 @@ nav .menu-x.show {
 /* MOBILE */
 @media (min-width: 980px) {
   /* STRUCTURE */
-  .content {
-    max-width: 1128px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .box-section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
   }
   /* NAV */
   #header.scroll-desktop nav {
@@ -558,7 +554,7 @@ nav .menu-x.show {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
-  .box-servicos-2 {
+  .grid-services-2 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -570,10 +566,14 @@ nav .menu-x.show {
             align-items: center;
   }
   .box-servicos-2:nth-child(1) {
-    background-color: #FFFFFF;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background-color: #F7F7F7;
   }
   .box-servicos-2:nth-child(3) {
-    background-color: #FFFFFF;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background-color: #F7F7F7;
   }
   .box-servicos-2 img {
     padding-bottom: 0;
@@ -610,6 +610,40 @@ nav .menu-x.show {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media (min-width: 1129px) {
+  /* STRUCTURE */
+  .content {
+    max-width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.375rem;
+    padding-right: 2.375rem;
+  }
+  #box-color-footer {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+  .box-color-gradient {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+  .box-color-black {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+  .full-width {
+    max-width: 1128px;
+    margin: auto;
+    padding-left: 2.375rem;
+    padding-right: 2.375rem;
+  }
+  .full-width-footer {
+    margin: auto;
+    padding-left: 2.375rem;
+    padding-right: 2.375rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
