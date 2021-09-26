@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
 
 *,
 *:before,
@@ -14,6 +15,7 @@
     --font-color-white: #FFFFFF;
     --font-color-lilas: #6442FF;
     --font-color-cinza: #777777;
+    --font-color-verde: #22c448;
 }
 
 html {
@@ -123,8 +125,8 @@ body {
 }
 
 .box-color-home {
-    padding-top: 10rem!important;
-    padding-bottom: 5rem!important;
+    padding-top: 10rem !important;
+    padding-bottom: 5rem !important;
     margin-left: -2.375rem;
     margin-right: -2.375rem;
     padding-left: 2.375rem;
@@ -153,13 +155,13 @@ body {
 /* MENU */
 
 .title-menu {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 2.1875rem;
     font-weight: 500;
 }
 
 .ponto-title {
-    color: #6A00F6;
+    color: var(--font-color-verde);
 }
 
 #header {
@@ -186,6 +188,10 @@ nav {
     ul li {
         text-align: center;
     }
+}
+
+nav ul li a.active {
+    color: var(--font-color-verde);
 }
 
 .menu-hamburger:hover {
@@ -253,7 +259,6 @@ nav .menu-x.show {
 
 .box-content-servicos-1 {
     display: grid;
-
 }
 
 .box-servicos-1 {
@@ -462,26 +467,30 @@ nav .menu-x.show {
 
         &:hover {
             font-weight: 500;
+            color: var(--font-color-verde);
         }
     }
 }
 
 .email-footer {
     a {
-        color: #6442FF;
+        color: var(--font-color-verde);
     }
 }
 
 .p-copyright-footer {
     padding-bottom: 2rem;
 
+
     a:hover {
-        color: #6442FF;
+        color: var(--font-color-verde);
     }
 }
 
 .grid-copyright-footer {
-    display: flex;
+    display: grid;
+    text-align: center;
+    
 }
 
 /* back-to-top e Whats */
@@ -593,7 +602,7 @@ nav .menu-x.show {
             color: var(--font-color-black);
 
             &:hover {
-                color: #999A9B;
+                color: var(--font-color-verde);
             }
         }
     }
@@ -639,10 +648,8 @@ nav .menu-x.show {
 
         &:nth-child(2) {
             padding-left: 0rem;
-            padding-right: 2.375rem;
+            padding-right: 0rem;
         }
-
-        ;
 
         &:nth-child(3) {
             margin-left: calc(50% - 50vw);
@@ -651,6 +658,14 @@ nav .menu-x.show {
         }
 
         ;
+    }
+
+    .img-servicos-2 {
+        order: 1;
+    }
+
+    .description-servicos-2 {
+        order: 0;
     }
 
     /* PORTFOLIO */
@@ -677,11 +692,6 @@ nav .menu-x.show {
     .grid-footer {
         grid-template-columns: 2fr 1fr max-content min-content;
         column-gap: 6rem;
-    }
-
-    .grid-copyright-footer {
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-between;
     }
 
 }
