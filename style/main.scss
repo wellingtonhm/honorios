@@ -89,7 +89,6 @@ img {
 #_servicos,
 #_servicos,
 #_portfolio,
-#_sobre,
 #_contato {
     position: absolute;
     width: 1px;
@@ -365,40 +364,6 @@ nav .menu-x.show {
 
 .p-description-portfolio {
     font-weight: 500;
-}
-
-/* SOBRE */
-
-#sobre {
-    h2 {
-        text-align: center;
-    }
-}
-
-.box-description-sobre {
-    display: grid;
-}
-
-.grid-equipe {
-    display: grid;
-    row-gap: 3rem;
-}
-
-.p-description-sobre {
-    font-weight: 300;
-}
-
-.img-equipe {
-    padding-bottom: 2.25rem;
-}
-
-.p-name-equipe {
-    font-weight: 500;
-}
-
-.p-description-equipe {
-    padding-top: 1rem;
-    font-weight: 300;
 }
 
 /* CONTATO */
@@ -679,17 +644,6 @@ nav .menu-x.show {
         grid-template-columns: 1fr 1fr;
         column-gap: 9rem;
         row-gap: 3.125rem;
-    }
-
-    /* SOBRE */
-
-    .box-description-sobre {
-        grid-template-columns: 1fr 2fr;
-    }
-
-    .grid-equipe {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 9rem;
     }
 
     /* FOOTER */
