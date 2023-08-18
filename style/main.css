@@ -55,6 +55,8 @@ a {
 
 .material-icons {
   font-family: 'Material Icons';
+  height: 25px;
+  width: 25px;
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
